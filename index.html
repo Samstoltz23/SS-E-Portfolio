@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Samantha Stoltzfus</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/e3dbc36c63.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <section id="landing-page">
+      <nav>
+        <div class="personal__logo">SS</div>
+        <ul class="nav__link--list">
+          <li class="nav__link">
+            <a href="#"
+              class="
+                nav__link--anchor link__hover-effect link__hover-effect--black
+              "
+            >About</a>
+          </li>
+          <li class="nav__link">
+            <a href="#"
+              class="
+                nav__link--anchor link__hover-effect link__hover-effect--black
+              "
+            >Projects</a>
+          </li>
+          <li class="nav__link">
+            <a href="#"
+              class="
+                nav__link--anchor link__hover-effect link__hover-effect--black
+              "
+            >Contact</a>
+          </li>
+          </li>
+          <li class="nav__link">
+            <a
+              href="#"
+              class="nav__link--anchor link__hover-effect link__hover-effect--black"
+              ><i class="fa-solid fa-circle-half-stroke"></i
+            ></a>
+          </li>
+        </ul>
+      </nav>
+      <header class="header">
+        <div class="header__content">
+          <h1 class="title">Hi!</h1>
+          <h1 class="title__green">I'm Samantha</h1>
+          <p class="header__para">
+            I'm an aspiring
+            <span class="green">frontend software engineer</span> that loves to
+            create. I enjoy creating clean, responsive, and user-friendly
+            websites while continuously learning new practices. This
+            <span class="green">portfolio</span> showcases my progress and the
+            projects I've completed as I grow into a confident front-end
+            developer.
+            <br />
+            Here's a bit more <span class="green">about me</span>.
+          </p>
+          <div class="social__list">
+            <a href="#" class="social__link click">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="#" class="social__link click">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="#" class="social__link click">
+              <i class="fa-solid fa-envelope"></i>
+            </a>
+          </div>
+        </div>
+      </header>
+      <button class="mail__btn click">
+        <i class="fa-regular fa-envelope"></i>
+      </button>
+      <a href="#projects" class="scroll">
+        <div class="scroll__icon click"></div>
+      </a>
+      <div class="modal">
+        <div class="modal__half modal__about">
+          <h3 class="modal__title modal__title--about">Here's a bit about me</h3>
+          <h4 class="modal__sub-title modal__sub-title--about">Frontend Software Engineer</h4>
+          <p class="modal__para modal__para--about">Hi! I'm Samantha, an aspiring <b class="green">software engineer</b> with a passion for creativity, problem solving, and building meaningful digital experiences. I'm currently developing my skills in HTML, CSS, and JavaScript.
+          <br>
+          <br>
+          I enjoy turning ideas into functional, user-friendly designs and challenging myself to learn something new with every project. Outside of coding, I'm a wife, a mom and a creative who enjoys crocheting, homemaking, and bringing ideas to life.
+          <br>
+          <br>
+          I'm excited to continue growing as a developer and see where this journey takes me.
+          </p>
+          <div class="modal__languages">
+            <figure class="modal__language">
+              <img class="modal__language--img" src="assets/HTML5 Logo Badge.svg" alt="HTML">
+              <span class="language__name">HTML</span>
+            </figure>
+            <figure class="modal__language">
+              <img class="modal__language--img" src="assets/css-131-722685.png" alt="CSS">
+              <span class="language__name">CSS</span>
+            </figure>
+            <figure class="modal__language">
+              <img class="modal__language--img" src="assets/javascript-1-225993.png" alt="JavaScript">
+              <span class="language__name">JavaScript</span>
+            </figure>
+          </div>
+        </div>
+        <div class="modal__half modal__contact">
+          <h3 class="modal__title modal__title--contact">Let's have a chat!</h3>
+          <h4 class="modal__sub-title modal__sub-title--contact">I'm currently open to new opportunities.</h4>
+          <form id="contact__form" action="">
+            <div class="form__item">
+              <label class="form__item--label">Name</label>
+              <input class="input" name="user_name" type="text required"></input>
+            </div>
+            <div class="form__item">
+              <label class="form__item--label">Email</label>
+              <input class="input" name="user_email" type="email" required></input>
+            </div>
+            <div class="form__item">
+              <label class="form__item--label">Message</label>
+              <textarea class="textarea" name="message" type="text" required></textarea>
+            </div>
+            <button id="contact__submit" class="form__submit">Send it my way!</button>
+          </form>
+          <div class="modal__overlay modal__overlay--loading" >
+            <i class="fas fa-spinner"></i>
+          </div>
+          <div class="modal__overlay modal__overlay--success">Thanks for the message! Looking forward to speaking to you soon.
+          </div>
+        </div>
+        <i class="fas fa-times modal__exit click"></i>
+      </div>
+    </section>
+    <section class="projects">
+      <div class="container">
+        <div class="row">
+          <h1 class="section__title">
+            Here are some of my <span class="green">projects</span>.
+          </h1>
+          <ul class="project__list">
+            <li class="project">
+              <div class="project__wrapper">
+                <img
+                  src="assets/26-best-indoor-plants.jpg.webp"
+                  class="project__img"
+                  alt=""
+                />
+                <div class="project__wrapper--background">
+                  <div class="project__description">
+                    <h3 class="project__description--title">Plant Project</h3>
+                    <h4 class="project__description--sub-title">
+                      HTML, CSS, JavaScript
+                    </h4>
+                    <p class="project__description--para">
+                      I love plants. They are so beautiful. A glimpse of God's
+                      creation. This will be replaced by a finished project once
+                      it is completed.
+                    </p>
+                    <div class="project__description--links">
+                      <a href="#" class="project__description--link">
+                        <i class="fa-brands fa-github"></i>
+                      </a>
+                      <a href="#" class="project__description--link">
+                        <i class="fa-solid fa-link"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="project">
+              <div class="project__wrapper">
+                <img
+                  src="assets/26-best-indoor-plants.jpg.webp"
+                  class="project__img"
+                  alt=""
+                />
+                <div class="project__wrapper--background">
+                  <div class="project__description">
+                    <h3 class="project__description--title">Plant Project</h3>
+                    <h4 class="project__description--sub-title">
+                      HTML, CSS, JavaScript
+                    </h4>
+                    <p class="project__description--para">
+                      I love plants. They are so beautiful. A glimpse of God's
+                      creation. This will be replaced by a finished project once
+                      it is completed.
+                    </p>
+                    <div class="project__description--links">
+                      <a href="#" class="project__description--link">
+                        <i class="fa-brands fa-github"></i>
+                      </a>
+                      <a href="#" class="project__description--link">
+                        <i class="fa-solid fa-link"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="project">
+              <div class="project__wrapper">
+                <img
+                  src="assets/26-best-indoor-plants.jpg.webp"
+                  class="project__img"
+                  alt=""
+                />
+                <div class="project__wrapper--background">
+                  <div class="project__description">
+                    <h3 class="project__description--title">Plant Project</h3>
+                    <h4 class="project__description--sub-title">
+                      HTML, CSS, JavaScript
+                    </h4>
+                    <p class="project__description--para">
+                      I love plants. They are so beautiful. A glimpse of God's
+                      creation. This will be replaced by a finished project once
+                      it is completed.
+                    </p>
+                    <div class="project__description--links">
+                      <a href="#" class="project__description--link">
+                        <i class="fa-brands fa-github"></i>
+                      </a>
+                      <a href="#" class="project__description--link">
+                        <i class="fa-solid fa-link"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <div class="footer__row">
+          <div class="footer__logo">SS</div>
+          <div class="footer__social--list">
+            <a
+              href="#"
+              class="footer__social--link link__hover-effect link__hover-effect--white"
+            >
+              GitHub
+            </a>
+            <a
+              href="#"
+              class="footer__social--link link__hover-effect link__hover-effect--white"
+            >
+              Linkedin
+            </a>
+            <a
+              href="#"
+              class="footer__social--link link__hover-effect link__hover-effect--white"
+            >
+              Contact
+            </a>
+            <a
+              href="#"
+              class="footer__social--link link__hover-effect link__hover-effect--white"
+            >
+              Resume
+            </a>
+          </div>
+          <div class="footer__copyright">
+            Copyright &copy; Made by Samantha Stoltzfus
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
