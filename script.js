@@ -23,10 +23,14 @@ function contact(event) {
     );
   })
 }
-
-
+let isModalOpen = false
 function toggleModal(){
-  document.body.classList.toggle("modal--open");
+  if (isModalOpen){
+    isModalOpen = false;
+    return document.body.classList.remove("modal--open");
+  }
+  isModalOpen = true;
+  document.body.classList += ("modal--open");
 }
 
 

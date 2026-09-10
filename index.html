@@ -41,7 +41,7 @@
                 "
               >Projects</a>
             </li>
-            <li class="nav__link">
+            <li class="nav__link" onclick="toggleModal()">
               <a href="#"
                 class="
                   nav__link--anchor link__hover-effect link__hover-effect--black
@@ -67,12 +67,13 @@
             I'm an aspiring
             <span class="green">frontend software engineer</span> that loves to
             create. I enjoy creating clean, responsive, and user-friendly
-            websites while continuously learning new practices. This
-            <span class="green">portfolio</span> showcases my progress and the
+            websites while continuously learning new practices.
+            <br>
+            This portfolio showcases my progress and the
             projects I've completed as I grow into a confident front-end
             developer.
-            <br />
-            Here's a bit more <span class="green">about me</span>.
+            <br>
+            Here's a bit more <span class="green click" onclick="toggleModal()">about me</span>.
           </p>
           <div class="social__list">
             <a href="#" class="social__link click">
@@ -121,6 +122,7 @@
           </div>
         </div>
         <div class="modal__half modal__contact">
+          <i class="fas fa-times modal__exit click" onclick="toggleModal()"></i>
           <h3 class="modal__title modal__title--contact">Let's have a chat!</h3>
           <h4 class="modal__sub-title modal__sub-title--contact">I'm currently open to new opportunities.</h4>
           <form id="contact__form" onsubmit="contact(event)">
@@ -144,7 +146,6 @@
           <div class="modal__overlay modal__overlay--success">Thanks for the message! Looking forward to speaking to you soon.
           </div>
         </div>
-        <i class="fas fa-times modal__exit click" onclick="toggleModal()"></i>
       </div>
     </section>
     <section class="projects">
