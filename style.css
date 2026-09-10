@@ -254,6 +254,7 @@ nav {
 .nav__link--list {
   display: flex;
 }
+
 .footer__social--list {
   width: 100%;
   max-width: 500px;
@@ -411,12 +412,12 @@ transition: all 300ms ease;
   display:flex;
   align-items: center;
   justify-content: center;
+  z-index:-1;
 }
 
 .modal__overlay--loading{
   background-color: #7d9d7c;
   font-size:80px;
-  z-index:-1;
 }
 
 .modal__overlay--success{
