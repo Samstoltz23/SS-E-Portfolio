@@ -6,8 +6,8 @@ function contact(event) {
   event.preventDefault();
   emailjs
     .sendForm(
-      "template_hecmjif",
       "service_qdhngdm",
+      "template_hecmjif",
       event.target,
       "-10dBvubUG7zjCqyA",
     )
