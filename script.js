@@ -4,6 +4,8 @@
 
 let isModalOpen = false
 let contrastToggle = false
+
+
 function toggleContrast(){
   contrastToggle = !contrastToggle;
   if (contrastToggle){
