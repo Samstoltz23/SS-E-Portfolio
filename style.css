@@ -177,7 +177,7 @@ nav,
   color:white;
 }
 
-.dark__theme section{
+.dark-theme section{
   background-color: #242424;
 }
 
@@ -305,6 +305,8 @@ nav {
   margin: 0 auto;
   height: 100px;
   padding: 0 20px;
+  position:relative;
+  z-index:10;
 }
 
 .nav__container{

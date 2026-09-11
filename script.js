@@ -9,7 +9,7 @@ let contrastToggle = false
 function toggleContrast(){
   contrastToggle = !contrastToggle;
   if (contrastToggle){
-    document.body.classList += "dark-theme"
+    document.body.classList.add("dark-theme")
   }
   else{
     document.body.classList.remove("dark-theme")
@@ -21,7 +21,7 @@ function contact(event) {
   event.preventDefault();
   const loading = document.querySelector('.modal__overlay--loading');
   const success = document.querySelector('.modal__overlay--success');
-  loading.classList += " modal__overlay--visible"
+  loading.classList.add(" modal__overlay--visible"); 
   emailjs
     .sendForm(
       'service_qdhngdm',
@@ -30,7 +30,7 @@ function contact(event) {
       '-10dBvubUG7zjCqyA'
   ).then(() => {
     loading.classList.remove("modal__overlay--visible");
-    success.classList += " modal__overlay--visible";
+    success.classList.add(" modal__overlay--visible");
   }).catch(() => {
     loading.classList.remove("modal__overlay--visible");
     alert(
