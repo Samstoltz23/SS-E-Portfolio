@@ -300,12 +300,12 @@ LANDING PAGE
 
 */
 
-.about-me__info--container{
+.profile__picture--container{
   display:flex;
   justify-content: center;
 }
 
-.about-me__picture--mask{
+.profile__picture--mask{
   width:200px;
   height:200px;
   border-radius:50%;
@@ -315,7 +315,7 @@ LANDING PAGE
   animation:animate-profile-picture 800ms 200ms backwards;
 }
 
-.about-me__picture{
+.profile__picture{
   width:100%;
   transform:scale(1.5);
   padding-top:16px;
