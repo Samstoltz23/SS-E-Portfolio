@@ -151,6 +151,10 @@ label{
   background-color: #242424;
 }
 
+.link__hover-effect--green:after {
+  background-color: #7d9d7c
+}
+
 .link__hover-effect:hover:after {
   left: 0;
   width: 100%;
@@ -223,10 +227,6 @@ LANDING PAGE
   min-height: 100vh;
 }
 
-.header__container{
-padding:64px 0;
-}
-
 .header__row{
   display:flex;
   align-items: center;
@@ -255,7 +255,7 @@ padding:64px 0;
 }
 
 .header__img{
-  width:200px;
+  width:400px;
   max-width:100%;
   height:auto;
 }
@@ -792,8 +792,8 @@ width = 80vw
   }
 
   .header__img{
-    width:100%;
-    max-width:448px;
+    width:400px;
+    max-width:100%;
   }
 
   .modal{
