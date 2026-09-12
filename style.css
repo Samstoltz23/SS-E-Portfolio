@@ -98,7 +98,7 @@ label{
 .title {
   font-size: 40px;
   margin-bottom: 12px;
-  margin-top:60px;
+  margin-top:0;
   text-align: left;
   line-height: 1;
 }
@@ -247,7 +247,7 @@ nav {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  height: 100px;
+  height: 80x;
   padding: 0 20px;
   position:relative;
   z-index:10;
@@ -308,11 +308,12 @@ LANDING PAGE
 .profile__picture--mask{
   width:200px;
   height:200px;
-  border-radius:50%;
+  border-radius:60px;
   overflow:hidden;
   box-shadow:0 8px 16px rgba(0, 0, 0, 0.25);
-  margin-bottom:28px;
+  margin-bottom:8px;
   animation:animate-profile-picture 800ms 200ms backwards;
+  z-index:100;
 }
 
 .profile__picture{
@@ -333,7 +334,7 @@ LANDING PAGE
   display:flex;
   align-items: center;
   justify-content: space-between;
-  gap:64px;
+  gap:32px;
   width:100%;
   max-width:1200px;
   margin: 0 auto;
@@ -345,15 +346,12 @@ LANDING PAGE
   width:50%;
 }
 
-.header__description{
-  padding: 32px 32px 32px 0;
-}
-
 .header__img--wrapper{
   border-radius: 50%;
   display:flex;
   justify-content: center;
   align-items: center;
+  z-index:100;
 }
 
 .header__img{
@@ -381,39 +379,6 @@ LANDING PAGE
   right: 40px;
   z-index:100;
   box-shadow: 0 12px 30px 0 rgb(0, 0, 0, 0.5);
-}
-
-.scroll {
-  position: absolute;
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.scroll__icon {
-  width: 20px;
-  height: 30px;
-  border: 2px solid #242424;
-  border-radius: 24px;
-  align-items: center;
-  justify-content: center;
-}
-
-.scroll__icon:after {
-  content: "";
-  width: 4px;
-  height: 6px;
-  background-color: #242424;
-  border-radius: 2px;
-  animation: scroll 1000ms infinite alternate-reverse;
-}
-@keyframes scroll {
-  0% {
-    transform: translateY(3px);
-  }
-  100% {
-    transform: translateY(-3px);
-  }
 }
 
 
@@ -855,6 +820,7 @@ width = 80vw
 
   .header__para{
     font-size:20px;
+    width:450px;
   }
 
   .header__row{
