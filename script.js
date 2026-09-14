@@ -52,13 +52,20 @@ function contact(event) {
   })
 }
 
-function toggleModal(){
+function toggleModal(section){
   if (isModalOpen){
     isModalOpen = false;
-    return document.body.classList.remove("modal--open");
+    document.body.classList.remove("modal--open", "modal--about-first");
+    return;
   }
   isModalOpen = true;
-  document.body.classList += ("modal--open");
+  document.body.classList.add("modal--open");
+
+  if (section === "about"){
+    document.body.classList.add("modal--about-first");
+  } else{
+    document.body.classList.remove("modal--about-first");
+  }
 }
 
 

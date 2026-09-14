@@ -891,6 +891,13 @@ width = 80vw
     width:100%;
   }
 
+  .modal--about-first .modal {
+    flex-direction: column;
+  }
+
+  .modal--about-first .modal__exit{
+    color:#242424;
+  }
   .language{
     width:calc(100% / 3);
   }
